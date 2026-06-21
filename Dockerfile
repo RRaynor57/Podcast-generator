@@ -1,13 +1,9 @@
-FROM ubuntu:latest
+FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-pip \
-    git
-
-RUN pip3 install pyyaml
-
-COPY . /app
 WORKDIR /app
 
-ENTRYPOINT ["python3", "Feed.py"]
+COPY . .
+
+RUN pip install pyyaml
+
+ENTRYPOINT ["python", "Feed.py"]
