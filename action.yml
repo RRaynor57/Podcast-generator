@@ -1,8 +1,8 @@
 name: "Podcast Generator"
-Author: "Richard Raynor"
-Desription: "Generates a feed for a podcast from a YAML file"
+author: "Richard Raynor"
+description: esription: "Generates a feed for a podcast from a YAML file"
 runs:
-  Using: "docker"
+  using: "docker"
   image: "Dockerfile"
 branding:
   icon: "git-branch"
